@@ -18,6 +18,14 @@ node main.js
 1. 数据库：Load DB(打开/新建)，Read DB(读取所有内容)，Close DB(关闭)
 2. 键值：Read(读取指定键)，Write(写入/覆盖键值)，Delete(删除指定键)
 
+## 预览
+**主页**
+
+![main](images/main.png)
+
+**读取**
+
+![open](images/open.png)
 ## 注意
 
 1. 绝对文件夹路径，不能为`%LocalAppData%`

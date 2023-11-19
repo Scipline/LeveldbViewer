@@ -1,3 +1,5 @@
-2023/11/18-23:33:33.531 2dfc Recovering log #6
-2023/11/18-23:33:33.578 2dfc Delete type=0 #6
-2023/11/18-23:33:33.578 2dfc Delete type=3 #4
+2023/11/19-20:36:09.540 3e04 Recovering log #8
+2023/11/19-20:36:09.540 3e04 Level-0 table #10: started
+2023/11/19-20:36:09.562 3e04 Level-0 table #10: 215 bytes OK
+2023/11/19-20:36:09.613 3e04 Delete type=0 #8
+2023/11/19-20:36:09.613 3e04 Delete type=3 #7

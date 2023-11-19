@@ -1,38 +1,37 @@
-[中文](./README.md)
-# Instructions
-
-## Environment Configuration
-
-You need a Node.js environment.
-```bash
-npm install
-```
-
-## Run Backend
-
-```bash
-cd services
-node main.js
-```
-
-## Start Using
-
-You can start a local server environment to run or directly open `index.html` in the browser. Enter the absolute path of the local LevelDB database folder and start enjoying it!
+[English](./README_en.md)
+## User Guide
+1. Environment Setup
+   Requires node environment
+   ```bash
+   npm install
+   ```
+2. Run Backend
+   ```bash
+   cd services
+   node main.js
+   ```
+3. Getting Started
+   Start the local server environment, or directly open `index.html` in the browser, enter the absolute folder path of the local LevelDB database, and start using it!
 
 ## Operations
-
 1. Database: Load DB (open/new), Read DB (read all content), Close DB (close)
-2. Key-Value: Read (read specified key), Write (write/overwrite key value), Delete (delete specified key)
+2. Key-Value: Read (read specified key), Write (write/overwrite key-value), Delete (delete specified key)
+
+## Preview
+**Home Page**
+![main](images/main.png)
+
+**Read**
+![open](images/open.png)
 
 ## Notes
-
-1. The absolute folder path cannot be `%LocalAppData%`.
-2. You cannot open an already opened database or open a database of a running browser. Although the operation interface of this project requires opening a browser, you can open it in another browser or copy a copy for operation.
-3. `xx\xx\xx\LocalStorage\leveldb\` includes all website's LocalStorage, the data will be large, there is a high probability of read/write failure, possibly due to the operation failure of the `Level` library, ~~perhaps to display the recursion of converting all nested objects to JSON objects more elegantly~~, or it may fail due to the failure of HTTP protocol to transmit large data, ~~or maybe because of my code problem~~. (Be careful to operate, improper operation will cause data loss of all websites locally).
+1. Absolute folder path cannot be `%LocalAppData%`
+2. Cannot reopen a database that is already open, or a database in a running browser. Although the project's operating interface requires opening the browser, you can use another browser or make a copy for operation.
+3. `xx\xx\xx\LocalStorage\leveldb\` contains LocalStorage from all websites, which can result in large data and high probability of read/write failure, possibly due to failed Level library operations, ~~possibly due to converting all nested objects into JSON objects for a more elegant display~~, or possibly due to failure in transmitting data via HTTP protocol, ~~or perhaps due to issues in my code~~... (Operate with caution, improper operations may result in local data loss on all websites)
 
 ## Appendix
 
-Example LevelDB path:
+Example LevelDB paths:
 
 Chrome:
 
@@ -43,7 +42,9 @@ Extension:
 - chrome.storage.local.get:`%LocalAppData%\BraveSoftware\Brave-Browser\User Data\Default\Local Extension Settings\akapkckdchfdkhbgmnkboidpaljnlimb`
 
 ## Improvements:
+- [ ]  Failure to open local storage databases for all websites (can use files in the **extra** directory for read-only if needed)
+- [ ]  Inability to read and write objects, only strings
+- [ ]  Developing new platforms...
 
-- [ ] Open all website's local storage database failed(If need it, you can use the file in the **extra** directory, but only read)
-- [ ] Cannot read and modify the value of the object, only string
-- [ ] Develop new platforms.....
+## Acknowledgments:
+Level: [https://github.com/Level/level](https://github.com/Level/level)  
