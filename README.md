@@ -1,3 +1,4 @@
+[English](./README_en.md)
 ## 使用说明
 1. 环境配置
 需要node环境
@@ -40,3 +41,5 @@ Extension：
 - [ ]  打开所有网站的本地存储数据库失败(有需求可以用**extra**目录下的文件，但仅读)
 - [ ]  不能读改值为的对象，只能字符串
 - [ ]  开发新的平台.....
+## 感谢：
+Level:[https://github.com/Level/level](https://github.com/Level/level)
