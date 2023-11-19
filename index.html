@@ -1,0 +1,70 @@
+<!--
+ * @Author       : Scipline
+ * @Since        : 2023-11-17 21:29:16
+ * @LastEditor   : Scipline
+ * @LastEditTime : 2023-11-19 20:26:34
+ * @FileName     : index.html
+ * @Description  : visual read-write operation
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 依赖于jQuery的JavaScript文件 -->
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <!-- Bootstrap V5 CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/jquery.json-editor.min.js"></script>
+    <style>
+      #json-display {
+        border: 1px solid #000;
+        padding: 10px 20px;
+        white-space: pre-wrap;
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="container py-3">
+    <h2 class="mb-3" align="center">LevelDB Viewer</h2>
+    <div class="mb-3">
+      <input class="form-control" id="dbPath" name="dbPath" placeholder="Absolute Database DirPath" />
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-primary me-2" onclick="loadDB()">Load DB</button>
+      <button class="btn btn-primary me-2" onclick="readAllKV()">Read DB</button>
+      <button class="btn btn-primary" onclick="closeDB()">Close DB</button>
+    </div>
+
+    <h2 class="mb-3 mt-4">Read/Write Key-Value Pair</h2>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="keyInput" name="keyInput" placeholder="Key" />
+    </div>
+    <div class="mb-3">
+      <textarea
+        class="form-control"
+        id="valueInput"
+        name="valueInput"
+        rows="3"
+        placeholder="Value"
+      ></textarea>
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-primary me-2" onclick="readKV()">Read</button>
+      <button class="btn btn-primary me-2" onclick="writeKV()">Write</button>
+      <button class="btn btn-primary" onclick="deleteKV()">Delete</button>
+    </div>
+    <div class="mb-3">
+      <textarea
+        class="form-control"
+        id="result"
+        name="result"
+        rows="3"
+        placeholder="Display Result"
+      ></textarea>
+    </div>
+
+    <h2 class="mb-3 mt-4">Read All Key-Value Pair</h2>
+    <pre id="json-display"></pre>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

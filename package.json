@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "level": "github:Level/level",
+    "winston": "^3.11.0"
+  },
+  "name": "leveldbviewer",
+  "description": "1. npm",
+  "version": "2.0.1",
+  "main": "index.html",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node src/main.js"
+  },
+  "keywords": [
+    "Visually",
+    "read",
+    "write",
+    "LevelDB"
+  ],
+  "author": "Scipline",
+  "license": "ISC"
+}
