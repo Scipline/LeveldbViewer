@@ -48,3 +48,5 @@
 {"key":"license","level":"info","message":"Value read from LevelDB","service":"leveldb","value":""}
 {"key":"license","level":"info","message":"Value written to LevelDB","service":"leveldb","value":"1"}
 {"key":"license","level":"info","message":"Value written to LevelDB","service":"leveldb","value":"true"}
+{"key":"Author","level":"info","message":"Value written to LevelDB","service":"leveldb","value":"Scipline"}
+{"key":"Email","level":"info","message":"Value written to LevelDB","service":"leveldb","value":"Scipline52@gmail.com"}
